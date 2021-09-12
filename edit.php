@@ -1,5 +1,6 @@
 <?php
-
+//сохранение изменений
+//из формы ввода
 include_once "includes/db.php";
 
     $id = $_GET["id"];
@@ -7,7 +8,6 @@ include_once "includes/db.php";
     $user = R::load('users', $id);
 
 ?>
-
 
 <form action="includes/save.php" method="post">
     <input type="hidden" name="id" value="<?= $user["id"] ?>">
