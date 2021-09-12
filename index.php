@@ -1,5 +1,5 @@
 <?php
-
+//Основной файл
     include_once "includes/db.php";
 
     $users = R::findAll('users');
